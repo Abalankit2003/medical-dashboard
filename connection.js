@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
+dotenv.config();
 
 const connection = mongoose
-  .connect(
-    "mongodb+srv://ankit:ankit@medial-dashboard.y6pl0.mongodb.net/?retryWrites=true&w=majority&appName=medial-dashboard"
-  )
+  .connect(process.env.MONGO)
   .then(() => console.log("mongoDB connection successful"))
   .catch((err) => console.log("mongoDB connection failure: " + err));
 
