@@ -1,0 +1,18 @@
+import Patient from "../storage/dashboard.storage.js";
+import mongoose from "mongoose";
+
+export const handleDashboardData = async (req, res, next) => {
+    try {
+        const body = req.body;
+        console.log(body);
+        const data = await Patient.create(body);
+        res.send("nice");
+        // return res.send("nice");    
+    } catch (error) {
+        next(error);
+    }
+}
+
+export const handlePatientData = (req, res) => {
+    res.render("dashboard.view.ejs");
+}

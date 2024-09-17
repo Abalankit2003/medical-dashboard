@@ -1,0 +1,53 @@
+# Node modules directory
+node_modules/
+
+# Environment variables file
+.env
+
+# Logs
+*.log
+logs/
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+dist/
+build/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Temporary files and directories
+tmp/
+temp/
+*.swp
+*.swo
+
+# Package-lock.json or yarn.lock (only if you don't want to track lock files)
+# package-lock.json
+# yarn.lock
+
+# Other files
+*.tgz
+*.gz
+*.zip
+
+# Optional: Uncomment if you use a specific build tool or framework
+# .next/
+# .nuxt/
+# .serverless/
+
